@@ -6,13 +6,17 @@
 ## 最初に
 
 - **推定・概略モデル**です。計測済みの物件データ、写真測量、LiDARスキャンではありません。
-- 外部には公開していません。GitHub Pagesの設定は利用者が行ってください。
+- GitHub Pagesで公開しています: https://namihira33.github.io/room-viewer/
 - 元動画、元の間取り画像、動画フレーム、人物、位置情報、住所・物件名は、この配布物には入れていません。
 - ただし、室内の間取りそのものは個人情報になり得ます。公開してよいか確認してください。
 - `noindex` と `robots.txt` は検索エンジンへの要請にすぎず、アクセス制限ではありません。
 - iPhone実機、Safari/WebKit、LINEアプリ、AR Quick Lookでの動作は未検証です。後述のChromium検証とは区別してください。
 
 ## 1. GitHub Pagesで公開する（ビルド不要）
+
+この配布物の公開先: https://namihira33.github.io/room-viewer/
+
+別のリポジトリに配置する場合は、次の手順を使ってください。
 
 1. ZIPを解凍します。GitHubに `room-viewer` などの名前の新しいリポジトリを作ります。無料の通常の利用なら公開リポジトリを使います。
 2. 解凍した**中身**をリポジトリの一番上にアップロードします。`index.html`、`viewer.js`、`styles.css` と `models/`、`assets/`、`vendor/`、`source/` を同じ階層に置いてください。
