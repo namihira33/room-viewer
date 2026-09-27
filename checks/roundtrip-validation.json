@@ -1,0 +1,57 @@
+{
+  "source-comparison": {
+    "meshes": 106,
+    "triangles": 19352,
+    "materials": 18,
+    "textures": 5,
+    "bounds": {
+      "min": [
+        -3.1050000190734863,
+        8.940696516468449e-10,
+        -3.6050000190734863
+      ],
+      "max": [
+        3.1050000190734863,
+        2.5799999237060547,
+        3.6050000190734863
+      ],
+      "size": [
+        6.210000038146973,
+        2.579999922811985,
+        7.210000038146973
+      ]
+    },
+    "threeRevision": "186"
+  },
+  "01-overview": {
+    "meshes": 106,
+    "triangles": 19352,
+    "materials": 18,
+    "textures": 5,
+    "bounds": {
+      "min": [
+        -3.1050000190734863,
+        8.940696516468449e-10,
+        -3.6050000190734863
+      ],
+      "max": [
+        3.1050000190734863,
+        2.5799999237060547,
+        3.6050000190734863
+      ],
+      "size": [
+        6.210000038146973,
+        2.579999922811985,
+        7.210000038146973
+      ]
+    },
+    "threeRevision": "186"
+  },
+  "pixelComparison": {
+    "meanAbsolute8bit": 0.001974114774114774,
+    "max8bit": 120.0,
+    "changedPixels": 132,
+    "totalPixels": 1365000
+  },
+  "method": "Generated source and exported GLB rendered separately with the same Chromium version, camera and lighting. Local assets supplied from memory. Not an iPhone / Quick Look test."
+}

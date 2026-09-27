@@ -1,0 +1,54 @@
+{
+  "glb": {
+    "magic": "glTF",
+    "version": 2,
+    "declaredLengthMatches": true,
+    "sceneCount": 1,
+    "meshCount": 106,
+    "materialCount": 18,
+    "embeddedImages": 5,
+    "allImagesEmbedded": true,
+    "allBuffersEmbedded": true,
+    "externalURIs": [],
+    "extensionsUsed": [],
+    "triangles": 19352,
+    "bounds": {
+      "min": [
+        -3.1050000190734863,
+        8.940696516468449e-10,
+        -3.6050000190734863
+      ],
+      "max": [
+        3.1050000190734863,
+        2.5799999237060547,
+        3.6050000190734863
+      ]
+    },
+    "issues": [],
+    "checkScope": "Container, buffer bounds, finite positions/normals, index ranges and embedded images. Not the official Khronos validator."
+  },
+  "model.usdz": {
+    "sizeBytes": 6618691,
+    "zipEntries": 112,
+    "firstFile": "model.usda",
+    "crcError": null,
+    "allUncompressedAnd64ByteAligned": true,
+    "metersPerUnit1": true,
+    "upAxisY": true,
+    "miniScale0_1Found": null,
+    "issues": [],
+    "scope": "ZIP CRC, uncompressed/aligned members, USD layer references and axis/units. Native USD/Quick Look rendering not tested."
+  },
+  "model-mini.usdz": {
+    "sizeBytes": 4991502,
+    "zipEntries": 63,
+    "firstFile": "model.usda",
+    "crcError": null,
+    "allUncompressedAnd64ByteAligned": true,
+    "metersPerUnit1": true,
+    "upAxisY": true,
+    "miniScale0_1Found": true,
+    "issues": [],
+    "scope": "ZIP CRC, uncompressed/aligned members, USD layer references and axis/units. Native USD/Quick Look rendering not tested."
+  }
+}

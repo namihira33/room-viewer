@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f4ef"><meta name="robots" content="noindex,nofollow">
+<meta name="description" content="間取り図と内覧動画を参考に作成した1LDKの推定3Dモデル。指で回転・拡大できます。">
+<title>ROOM STUDY — 1LDKを立体で見る</title>
+<link rel="icon" href="./assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css">
+<script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="./" aria-label="最初の画面へ"><span class="brand-icon">⌂</span><span>ROOM <b>STUDY</b></span></a>
+  <div class="header-title">間取りを、立体で。</div>
+  <div class="header-right"><span class="version">推定モデル <b>v1.0</b></span><button id="info-open" class="icon-btn" aria-label="モデルについて">i</button></div>
+</header>
+<main class="layout">
+  <aside class="sidebar">
+    <div class="intro"><p class="eyebrow">A WALK THROUGH THE SPACE</p><h1>1LDK<span>お部屋を見てみよう</span></h1><p class="intro-description">間取り図と内覧動画から<br>空間のつながりを再構成。</p></div>
+    <nav class="room-nav" aria-label="視点の切り替え">
+      <button class="room active" data-view="overview" aria-pressed="true"><span class="room-index">00</span><span class="room-name">全体を見る<small>立体の間取り</small></span><span class="room-arrow">↗</span></button>
+      <button class="room" data-view="ldk" aria-pressed="false"><span class="room-index">01</span><span class="room-name">LDK<small>10.4帖 · キッチン</small></span><span class="room-arrow">↗</span></button>
+      <button class="room" data-view="bedroom" aria-pressed="false"><span class="room-index">02</span><span class="room-name">洋室<small>6帖 · クローゼット</small></span><span class="room-arrow">↗</span></button>
+      <button class="room" data-view="wash" aria-pressed="false"><span class="room-index">03</span><span class="room-name">水まわり<small>洗面 · 浴室 · トイレ</small></span><span class="room-arrow">↗</span></button>
+      <button class="room" data-view="entry" aria-pressed="false"><span class="room-index">04</span><span class="room-name">玄関<small>タイル · シューズ収納</small></span><span class="room-arrow">↗</span></button>
+    </nav>
+    <div class="sidebar-note"><span class="note-dot"></span><p>寸法は推定です。<br>実測・家具購入の判断には使えません。</p></div>
+    <button id="export-all" hidden>制作モード：3形式を生成</button>
+  </aside>
+  <section class="stage" aria-label="操作できる3Dモデル">
+    <div id="canvas-wrap"><canvas id="viewer" aria-label="1LDKの3Dビューア。ドラッグで回転、ピンチで拡大縮小。"></canvas></div>
+    <div class="stage-top"><div class="view-heading"><span id="view-number">00 / OVERVIEW</span><h2 id="view-title">空間を、ひと目で。</h2></div>
+      <div class="view-actions"><button id="top-view" class="tool-btn" title="真上から見る">▦ <span>真上</span></button><button id="reset-view" class="tool-btn" title="最初の視点">↺ <span>戻す</span></button></div>
+    </div>
+    <div id="labels" aria-hidden="true"></div>
+    <div id="loading" class="loading"><span class="loader"></span><strong>お部屋を準備しています</strong><small>3Dモデルを読み込み中…</small></div>
+    <div id="error" class="error" hidden><strong>3D表示を開始できませんでした</strong><p id="error-message"></p><a href="./assets/preview.jpg">確認画像を見る</a><a href="./models/model.usdz">USDZを開く</a></div>
+    <div class="stage-bottom"><div class="controls"><button id="cut-toggle" class="pill selected" aria-pressed="true"><span class="toggle-dot"></span>壁を低く</button><button id="rotate-toggle" class="pill" aria-pressed="false">⟳ 自動回転</button><button id="labels-toggle" class="pill selected" aria-pressed="true">Aa 部屋名</button></div><p id="gesture-help">1本指で回転 · 2本指で拡大・移動</p></div>
+    <div class="ar-wrap"><a id="ar-link" class="ar-button" rel="ar" href="./models/model-mini.usdz" data-label="模型をARで見る" aria-label="10分の1模型をARで見る"><img src="./assets/ar-icon.svg" alt="10分の1模型をARで見る"></a><small>iPhone / iPad · 1:10模型</small></div>
+  </section>
+</main>
+<footer class="footer"><span>VIDEO + PLAN → 3D</span><span>天井なしの静止モデル / 室内高さ 2.40 m〈仮定〉</span><button id="share-link">共有リンクをコピー ↗</button></footer>
+<div id="toast" role="status"></div>
+<dialog id="info"><button id="info-close" class="close-btn" aria-label="閉じる">×</button><p class="eyebrow">ABOUT THIS MODEL</p><h2>このモデルについて</h2><p>添付の間取り図を主資料に、内覧動画で見える仕上げと設備を参考にした、<strong>概略・推定モデル</strong>です。写真測量やLiDARスキャンではありません。</p><dl><dt>参考資料で確認した内容</dt><dd>LDK 10.4帖・洋室6帖の配置、茶色の床と建具、白いキッチン、IH天板、玄関タイル、三面鏡、洗濯機パン、浴室の濃色壁。</dd><dt>仮定した寸法</dt><dd>外形基準 約6.0 × 7.0 m（一部欠き込み）／天井高2.40 m／外壁厚0.15 m／内壁厚0.10 m。床スラブ底面Y=0、仕上げ床Y=0.18 m。</dd><dt>表示の省略</dt><dd>天井・屋根・周辺建物・人・荷物は含みません。ガラスと鏡は簡略表現です。壁を低くすると、上部建具や高い設備も非表示になります。</dd><dt>iPhone / LINEでの表示</dt><dd>ARはSafariでの確認を推奨します。LINE内でARが開かない場合はメニューから外部ブラウザへ。実機での表示・AR配置は未検証です。</dd><dt>公開について</dt><dd>このページをGitHub Pagesで公開すると、リンクを知る家族以外もアクセスできます。元動画・参考写真・位置情報は同梱していません。noindexはアクセス制限ではありません。</dd></dl><div class="download-links"><a href="./assets/rotation-preview.mp4">回転プレビュー（7秒）</a><a href="./models/model.glb" download>GLB（編集用）</a><a href="./models/model.usdz">USDZ（推定実寸）</a><a href="./models/model-mini.usdz">USDZ（1:10・低い壁）</a></div><p class="fine-print">実測図・避難計画・構造設計・家具の寸法判断には使用しないでください。</p></dialog>
+<noscript><p>3D表示にはJavaScriptが必要です。<a href="./assets/preview.jpg">確認画像はこちら</a></p></noscript>
+<script>if(location.protocol==='file:'){document.getElementById('loading').hidden=true;document.getElementById('error').hidden=false;document.getElementById('error-message').textContent='HTMLのダブルクリックではモデルを読み込めません。READMEの手順でローカルサーバーを起動するか、GitHub Pagesへ配置してください。';}</script>
+<script type="module" src="./viewer.js"></script>
+</body></html>

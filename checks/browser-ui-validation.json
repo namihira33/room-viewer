@@ -1,0 +1,31 @@
+{
+  "mobileNoHorizontalOverflow": true,
+  "mobileCanvasSize": {
+    "x": 0,
+    "y": 66,
+    "width": 390,
+    "height": 666
+  },
+  "mobileARMarkup": {
+    "href": "./models/model-mini.usdz",
+    "rel": "ar",
+    "oneImg": true
+  },
+  "simulatedPinchChangedZoom": {
+    "passed": true,
+    "before": 30.255995020875922,
+    "after": 21.874515006425373
+  },
+  "cut-toggle": true,
+  "labels-toggle": true,
+  "rotate-toggle": true,
+  "preset_ldk": true,
+  "preset_bedroom": true,
+  "preset_wash": true,
+  "preset_entry": true,
+  "preset_overview": true,
+  "topButton": true,
+  "infoDialogOpens": true,
+  "browserErrors": [],
+  "nativeIPhoneOrQuickLookTested": false
+}

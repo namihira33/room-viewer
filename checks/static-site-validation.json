@@ -1,0 +1,128 @@
+{
+  "missingFiles": [],
+  "http": {
+    "assets/ar-icon.svg": {
+      "status": 200,
+      "mime": "image/svg+xml",
+      "sameBytes": true
+    },
+    "assets/icon.svg": {
+      "status": 200,
+      "mime": "image/svg+xml",
+      "sameBytes": true
+    },
+    "assets/preview.jpg": {
+      "status": 200,
+      "mime": "image/jpeg",
+      "sameBytes": true
+    },
+    "assets/rotation-preview.mp4": {
+      "status": 200,
+      "mime": "video/mp4",
+      "sameBytes": true
+    },
+    "index.html": {
+      "status": 200,
+      "mime": "text/html",
+      "sameBytes": true
+    },
+    "models/model-mini.usdz": {
+      "status": 200,
+      "mime": "model/vnd.usdz+zip",
+      "sameBytes": true
+    },
+    "models/model.glb": {
+      "status": 200,
+      "mime": "model/gltf-binary",
+      "sameBytes": true
+    },
+    "models/model.usdz": {
+      "status": 200,
+      "mime": "model/vnd.usdz+zip",
+      "sameBytes": true
+    },
+    "source/model.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "styles.css": {
+      "status": 200,
+      "mime": "text/css",
+      "sameBytes": true
+    },
+    "vendor/three/addons/RoundedBoxGeometry.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/addons/controls/OrbitControls.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/addons/environments/RoomEnvironment.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/addons/exporters/GLTFExporter.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/addons/exporters/USDZExporter.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/addons/libs/fflate.module.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/addons/loaders/GLTFLoader.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/addons/utils/BufferGeometryUtils.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/addons/utils/SkeletonUtils.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/build/three.core.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "vendor/three/build/three.module.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    },
+    "viewer.js": {
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "sameBytes": true
+    }
+  },
+  "jsSyntax": {
+    "viewer.js": {
+      "exitCode": 0,
+      "stderr": ""
+    },
+    "source/model.js": {
+      "exitCode": 0,
+      "stderr": ""
+    }
+  },
+  "scope": "Local path checks and stdlib HTTP delivery. Browser rendering tested separately with memory-supplied files. GitHub Pages itself not tested.",
+  "duplicateHtmlIds": [],
+  "originalMediaIncluded": false
+}
